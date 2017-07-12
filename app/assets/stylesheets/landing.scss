@@ -1,0 +1,202 @@
+// Place all the styles related to the Landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background {
+  background-color: #f5c85f;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  margin: 0;
+  padding: 0;
+  width: device-width;
+  height: 2vh;
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  max-height: 500px;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.phone {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float:right;
+}
+
+.barra {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  float: left;
+}
+
+
+.block-phone {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  overflow: auto;
+  max-height:100%;
+}
+
+.block-logo {
+  height: 100%;
+  width: 53%;
+  display: inline-block;
+  overflow: auto;
+  max-height:100%;
+}
+
+.block-barra {
+  height: 100%;
+  width:7%;
+  display:inline-block;
+  overflow: auto;
+  max-height:100%;
+  overflow:hidden;
+}
+
+.border {
+  background: url("/assets/triangle.png");
+  background-repeat: repeat-x;
+  background-size: 15px 15px;
+  transform: translateY(-15px);
+  height:15px;
+  overflow: auto;
+  margin: 0 auto;
+  width:100%;
+}
+
+.greymain {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  max-height: 250px;
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px;
+  transform: translateY(-15px);
+}
+
+.itemcontainer {
+  width: calc(100% / 5);
+  ////display: inline-block;
+  //flex-direction: column;
+  //align-items: center;
+
+  text-align:center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: auto;
+
+}
+
+
+p {
+  font-family: "Myriad Pro";
+  letter-spacing: -1px;
+  color: #999999;
+  font-size:18px;
+}
+
+h2 {
+  font-family: "Myriad Pro";
+  letter-spacing: -1px;
+  color: #999999;
+  font-size:20px;
+}
+
+.footer {
+  text-align:center;
+}
+
+.textbox {
+  border: none;
+  border-radius: 9px;
+  width:15%;
+  height:30px;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.button {
+  border: 1px;
+  color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px/30px;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-size:22px;
+  font-weight:bold;
+}
+
+
+
+@media screen and (max-width:1000px){
+
+  .block-barra {
+    display: none;
+  }
+
+  .block-phone {
+    display: none;
+  }
+
+  .block-logo {
+    width:100%; margin: 0 auto;
+  }
+
+  .logo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    float: none;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .itemcontainer {
+    width: 100%;
+  }
+
+  .textbox {
+    width: 75%;
+  }
+}
