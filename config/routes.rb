@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   devise_for :admin_users
-  devise_for :users
   devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
 
-  get 'welcome/index'
+  # get 'welcome/index'
 
   resources :articles do
     resources :comments
