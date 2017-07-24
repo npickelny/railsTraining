@@ -4,3 +4,6 @@ LineLength:
  Max: 99
 Metrics/AbcSize:
   Max: 30
+
+Style/ClassAndModuleChildren:
+  Enabled: false
