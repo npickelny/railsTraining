@@ -49,13 +49,6 @@ jobs:
             bundle exec rspec \
                             "${TEST_FILES}"
 
-
-#         bundle exec rspec --format progress \
-#                            --format RspecJunitFormatter \
-#                            --out /tmp/test-results/rspec.xml \
-#                            --format progress \
-#                            "${TEST_FILES}"
-
       - run:
           name: run rubocop
           command: |
