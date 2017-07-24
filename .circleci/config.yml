@@ -70,6 +70,6 @@ jobs:
 
     deployment:
       staging:
-        branch: master
+        branch: feature/circle_config
         heroku:
           appname: ancient-meadow-37163
