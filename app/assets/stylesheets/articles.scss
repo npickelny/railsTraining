@@ -1,3 +1,21 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'colors';
+
+.top-bar {
+  background: url('https://4.bp.blogspot.com/-C_zkoO5xiDY/UEVEiaE9O1I/AAAAAAAAIKA/Ot2_guGv02U/s1600/stripe.png') repeat-x;
+  height: 10px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.list-item {
+  color: $grey;
+  font: normal normal 13px Lato,sans-serif;
+  margin: 0;
+  padding: 11px 10px;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}

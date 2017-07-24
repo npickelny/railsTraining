@@ -1,22 +1,27 @@
+<div class="top-bar" />
 
 <h1>Listing articles</h1>
 
 <%= link_to t('new_article'), new_article_path %>
 
-<table>
-  <tr>
-    <th><%= t('title') %></th>
-    <th><%= t('text') %></th>
-  </tr>
+<div class="container.fluid">
 
-  <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= article.text %></td>
-        <td><%= link_to t('show'), article_path(article) %></td>
-        <td><%= link_to t('edit'), edit_article_path(article) %></td>
-        <td><%= link_to t('delete'), article_path(article), method: :delete, data: {confirm: "sure?" } %></td>
-      </tr>
-  <% end %>
+  <table>
+    <tr>
+      <th><%= t('title') %></th>
+      <th><%= t('text') %></th>
+    </tr>
+    <div class="list-item">
+      <% @articles.each do |article| %>
+          <tr>
+            <td><%= article.title %></td>
+            <td><%= article.text %></td>
+            <td><%= link_to t('show'), article_path(article) %></td>
+            <td><%= link_to t('edit'), edit_article_path(article) %></td>
+            <td><%= link_to t('delete'), article_path(article), method: :delete, data: {confirm: "sure?" } %></td>
+          </tr>
+      <% end %>
+    </div>
 
-</table>
+  </table>
+</div>
